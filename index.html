@@ -3,23 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfólio de Helloysa da Rocha, estudante de Desenvolvimento de Sistemas e futura estudante de Medicina e Engenharia de Software.">
     <title>Portfólio - Helloysa da Rocha</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./assents/css/style.css">
 </head>
 <body>
-    <header>
-        <img src="eu.jpg" alt="Foto de perfil de Helloysa da Rocha" class="foto">
-        <h1>Helloysa da Rocha</h1>
-    </header>
-    <main>
-        <section class="sobre-mim">
-            <p>Olá! Sou estudante de Desenvolvimento de Sistemas no Senai, tenho 16 anos e moro no interior de São Paulo. Pretendo fazer Medicina e Engenharia de Software e tenho como foco aprender novas tecnologias.</p>
+    
+    <!-- Cabecalho do Portifolio-->
+    <header class="cabecalho">
+        <section class="link-cabecalho">
+        <nav>
+            <ul>
+            <a href="#contato">Contato</a>
+            <a href="#Sobre mim">Sobre mim</a>
+            <a href="#Habilidades">Habilidade</a>
+            </ul>
+        </nav>
         </section>
+
+    </header>
+
+ 
+     
+        
+   
+    <main>
+        <img src="./assents/img/eu.jpg" alt="Foto de perfil de Helloysa da Rocha" class="foto">
+        <h1>Helloysa da Rocha</h1>
+        <p class="sobre-mim">Olá! Sou estudante de Desenvolvimento de Sistemas <br> no Senai, tenho 16 anos e moro no interior de São Paulo. <br> Pretendo fazer Medicina e Engenharia de Software e <br>tenho como foco aprender novas tecnologias.</p>
         <section class="secao-projetos">
             <h2>Meus Projetos</h2>
             <a href="https://github.com/helozinha1" class="botao-link">Veja Meus Projetos no GitHub</a>
         </section>
+
+
         <section class="secao-habilidades">
             <h2>Habilidades</h2>
             <ul>
@@ -28,6 +44,22 @@
                 <li>JavaScript</li>
             </ul>
         </section>
-    </main>
+
+        <div class="contato">
+            <h2 class="cntt">Contato</h2>
+            <p class="cntt">Entre em contato</p>
+
+            <form action="">
+                <p class="cntt">Email: <input type="email"></p> 
+                <p class="cntt">Celular: <input type="tel"></p>
+                <p class="mnsg">Mensagem: <input type="text"></p>
+                </form>
+        </div>
+        </main>
+        
+    
 </body>
+   <footer id="rodape">
+    <p class="rodape">&copy; 2025 Desenvolvido por Helloysa</p>
+    </footer>
 </html>

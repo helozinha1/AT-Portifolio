@@ -4,18 +4,18 @@
     --cor-secundaria: #b60064;
     --cor-texto-claro: #ffffff;
 }
-
+/* */
 body {
     background-color: var(--cor-fundo);
     font-family: Arial, Helvetica, sans-serif;
     color: var(--cor-principal);
-    display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
-    margin: 0;
-    padding: 20px;
+    text-align: center; 
+    
+    
 }
+
 
 .foto {
     width: 200px;
@@ -24,6 +24,11 @@ body {
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 20px;
+     align-items: center;
+    text-align: center; 
+    margin-top: 10px;
+    
+   
 }
 
 h1 {
@@ -32,12 +37,15 @@ h1 {
 }
 
 .sobre-mim {
-    max-width: 600px;
+    
     font-size: 1.2rem;
     color: var(--cor-secundaria);
-    line-height: 1.5;
-    margin-bottom: 30px;
+    text-align: center;
+   
+    
+    
 }
+
 
 .botao-link {
     background-color: var(--cor-secundaria);
@@ -73,4 +81,75 @@ h2 {
     color: var(--cor-texto-claro);
     padding: 8px 16px;
     border-radius: 20px;
+}
+.secao-habilidades {
+    /**margin-bottom: 80px;**/
+}
+
+.cabecalho{
+    padding: 20px;
+    text-align: center;
+    background-color: var(--cor-principal)
+    
+    
+        
+}
+
+.cabecalho a{
+    text-decoration: none;
+    color: var(--cor-texto-claro);
+    margin-left: 10px;
+
+}
+
+
+.contato{
+ 
+    background-color: var(--cor-principal);
+    width: 400px;
+    height: 400px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+   
+}
+
+.cntt{
+    color: var(--cor-texto-claro);
+}
+
+.mnsg{
+    color: var(--cor-texto-claro);
+}
+
+.rodape{
+    color: var(--cor-texto-claro);
+}
+
+
+
+footer{
+    background-color: #720340;
+    padding: 24px;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+main{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
 }
