@@ -254,3 +254,86 @@ main{
     color: var(--cor-fundo);
 }
 
+
+.about-content {
+    position: relative;
+    z-index: 2;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center; /* Centraliza os cards */
+    flex-wrap: wrap; /* Permite que os cards quebrem a linha */
+    gap: 30px; /* Espaço entre os cards */
+    margin-bottom: 60px;
+}
+
+.card1 {
+    background: var(--cor-gradiente-card-escuro); 
+    border-radius: 12px;
+    flex: 1;
+    margin: 40px;
+    padding: 40px;
+    box-sizing: border-box; 
+    min-width: 280px;
+    min-height: 280;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: left; 
+
+}
+.card1:hover {
+    transform: translateY(-15px); 
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+}
+
+.card1 h3 {
+    color:var(--cor-fundo); 
+    font-size: 2em;
+    margin-bottom: 18px;
+}
+
+.card1 p {
+    font-size: 1.1em;
+    line-height: 1.7;
+    color: #e0e0e0;
+}
+
+.technologies-card {
+    background: var(--cor-gradiente-card-escuro);
+    border-radius: 12px;
+    padding: 50px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    margin-top: 50px;
+}
+
+.technologies-card h3 {
+    color: var(--cor-fundo); 
+    font-size: 2.5em;
+    margin-bottom: 35px;
+    text-align: center;
+}
+
+.technologies-card .tech-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 35px;  
+}
+
+.technologies-card .tech-icons img {
+    width: 60px; /* Tamanho dos ícones de tecnologia */
+    height: 60px;
+    transition: transform 0.2s ease;
+}
+
+.technologies-card .tech-icons img:hover {
+    transform: scale(1.15); /* Efeito de zoom nos ícones */
+}
+
