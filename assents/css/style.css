@@ -1,257 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+
 :root {
     --cor-fundo: #f0d5e7;
     --cor-principal: #720340;
     --cor-secundaria: #b60064;
     --cor-texto-claro: #ffffff;
     --cor-fundo-card: #e0a3b8;
-    --cor-gradiente-card-escuro: linear-gradient(135deg, #b60064, #720340); 
+    --cor-gradiente-card-escuro: linear-gradient(135deg, #b60064, #720340);
 }
 
 body {
     background-color: var(--cor-fundo);
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
     color: var(--cor-principal);
     margin: 0;
     padding: 0;
-    box-sizing: border-box; 
+    box-sizing: border-box;
 }
 
+.perfil-cabecalho {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
 
 .foto {
     width: 70px;
     height: 70px;
     border-radius: 50%;
-    border: 2px solid #e0a3b8; /* Base border color */
-    box-shadow: 
-    0 0 5px #720340, /* Inner glow */
-    0 0 10px #720340, /* Mid glow */
-    0 0 15px #720340; /* Outer glow */
-    
+    border: 2px solid #e0a3b8;
+    box-shadow: 0 0 5px #720340, 0 0 10px #720340, 0 0 15px #720340;
+}
+
+.cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px;
+    color: var(--cor-fundo);
+    background: var(--cor-gradiente-card-escuro);
    
 }
- 
+
+.nome{
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.link-cabecalho ul {
+    list-style: none;
+    display: flex;
+    gap: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+.link-cabecalho a {
+    text-decoration: none;
+    color: var(--cor-fundo);
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.link-cabecalho a:hover {
+    color: var(--cor-secundaria);
+    text-decoration: underline;
+}
+
 h1 {
     font-size: 2.5rem;
     color: var(--cor-principal);
     text-align: center;
     margin-top: 60px;
     margin-bottom: 10px;
-    
 }
-
 
 .sobre-mim {
     font-size: 1.2rem;
     color: var(--cor-secundaria);
     text-align: center;
-    
 }
 
-
-.botao-link {
-    background: var(--cor-gradiente-card-escuro);
-    color: var(--cor-texto-claro);
-    padding: 24px 48px;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
-}
-
-.botao-link:hover {
-    background-color: var(--cor-principal);
-}
-
-.titulo-projetos {
-    color: var(--cor-principal);
-    text-align: center;
-    font-size: 2rem;
-    font-weight: bold;
-    margin-top: 20px;
-    margin-bottom: 40px;
-    
-}
-
-
-.cabecalho{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    justify-content: space-between;
-    padding: 24px;
-    color: var(--cor-texto-claro);
-    background: var(--cor-gradiente-card-escuro)
-    
-    
-        
-}
-
-.cabecalho a{
-    text-decoration: none;
-    color: var(--cor-texto-claro);
-    font-weight: bold;
-    margin-right: 16px;
-    font-size: 1.2rem;
-    transition: color 0.3s ease;
-    
-    
-}
-.cabecalho a:hover{
-    color: var(--cor-secundaria);
-    text-decoration: underline;
-
-}   
-
-
-
-
-.rodape{
-    
+.rodape {
     color: var(--cor-texto-claro);
 }
 
-
-
-footer{
+footer {
     margin-top: 60px;
     background: var(--cor-gradiente-card-escuro);
     padding: 24px;
-    text-align: center;   
-    font-weight: bold; 
+    text-align: center;
+    font-weight: bold;
 }
 
-main{
-    display:flex;
+main {
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 20px;
-
 }
 
-.container{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 2rem;
-    font-family: 'Courier New', Courier, monospace;
+.Habilidades {
+    color: var(--cor-principal);
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
 }
-.card{
+
+.container-habilidades {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.card-habilidade {
     background: var(--cor-gradiente-card-escuro);
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgb(0, 0, 0, 0.2);
-    margin: 0.5rem;
-    padding: 0.5rem;
-    width: 15rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 30px;
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     color: var(--cor-texto-claro);
     
 }
 
-.card:hover{
-    transform: translateY(-10px);
-    box-shadow: 0 8px 16px rgb(0, 0, 0, 0.3);
-
+.card-habilidade:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
 
-.card h2{
+.card-habilidade h2 {
+    color: var(--cor-texto-claro);
+    font-size: 1.5rem;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.card-habilidade i {
+    font-size: 3.5rem;
     color: var(--cor-texto-claro);
 }
 
-.card i{
-    font-size: 4rem;
-    margin-bottom: 1rem;
+/* --- Media Queries para responsividade --- */
 
+/* Telas de tablet (768px a 1024px) */
+@media (max-width: 1024px) {
+    .container-habilidades {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
-.fa-html5{
+/* Telas de celular (até 767px) */
+@media (max-width: 767px) {
+    .container-habilidades {
+        grid-template-columns: 1fr;
+    }
+}
+
+.fa-html5 {
     color: rgb(214, 90, 8);
-    margin-top: 10px;
 }
 
-.fa-square-js{
-    color: rgb(219, 219, 36);
-    margin-top: 10px;
-}
-
-.fa-react{
-    color: rgb(97, 218, 251);
-    margin-top: 10px;
-}
-.fa-node{
-    color: rgb(113, 189, 79);
-    margin-top: 10px;
-}
-.fa-database{
-    color: rgb(16, 16, 16);
-    margin-top: 10px;
-}
-
-.fa-css3-alt{
+.fa-css3-alt {
     color: rgb(4, 86, 179);
-    margin-top: 10px;
 }
 
-.Habilidades {
-    color: var(--cor-principal);
-    text-align: center;
-    font-size: 2rem;
-    font-weight: bold;
-    margin-top: 60px;
-    margin-bottom: -40px;
+.fa-square-js {
+    color: rgb(219, 219, 36);
 }
 
-.contato{
-    color: var(--cor-fundo);
-    text-align: center;
-    font-size: 2rem;
-    font-weight: bold;
-    margin-top: 60px;
-    margin-bottom: 20px;
+.fa-react {
+    color: rgb(97, 218, 251);
 }
 
-.form{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    background: var(--cor-gradiente-card-escuro);
-    border-radius: 8px;
-    padding: 20px 40px 20px 40px;
-    box-shadow: 0 2px 4px rgb(0, 0, 0, 0.2);
-    
-
-}
-.form input, .form textarea{
-    width: 300px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 1rem;
+.fa-node {
+    color: rgb(113, 189, 79);
 }
 
-.form button{
-    background: var(--cor-gradiente-card-escuro);
-    color: var(--cor-texto-claro);
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    font-weight: bold;
-}
-
-.form button:hover{
-    background-color: var(--cor-principal);
-}
-
-#contato{
-    color: var(--cor-fundo);
+.fa-database {
+    color: rgb(16, 16, 16);
 }
 
 
@@ -264,35 +200,35 @@ main{
 
 .card-container {
     display: flex;
-    justify-content: center; /* Centraliza os cards */
-    flex-wrap: wrap; /* Permite que os cards quebrem a linha */
-    gap: 30px; /* Espaço entre os cards */
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
     margin-bottom: 60px;
 }
 
 .card1 {
-    background: var(--cor-gradiente-card-escuro); 
+    background: var(--cor-gradiente-card-escuro);
     border-radius: 12px;
     flex: 1;
     margin: 40px;
     padding: 40px;
-    box-sizing: border-box; 
+    box-sizing: border-box;
     min-width: 280px;
     min-height: 280;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(8px);
     border: 1px solid rgba(255, 255, 255, 0.25);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    text-align: left; 
-
+    text-align: left;
 }
+
 .card1:hover {
-    transform: translateY(-15px); 
+    transform: translateY(-15px);
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
 }
 
 .card1 h3 {
-    color:var(--cor-fundo); 
+    color: var(--cor-fundo);
     font-size: 2em;
     margin-bottom: 18px;
 }
@@ -303,37 +239,100 @@ main{
     color: #e0e0e0;
 }
 
-.technologies-card {
+/* Estilos para o botão de link */
+.botao-link {
     background: var(--cor-gradiente-card-escuro);
-    border-radius: 12px;
-    padding: 50px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-    backdrop-filter: blur(8px);
-    border: 1px solid rgba(255, 255, 255, 0.25);
-    margin-top: 50px;
+    color: var(--cor-texto-claro);
+    padding: 30px 60px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.25rem;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Adicionando a transição de transformação */
 }
 
-.technologies-card h3 {
-    color: var(--cor-fundo); 
-    font-size: 2.5em;
-    margin-bottom: 35px;
+
+.botao-link:hover {
+    background-color: var(--cor-principal);
+    transform: scale(1.05); 
+}
+
+
+.titulo-projetos {
+    color: var(--cor-principal);
     text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); 
 }
 
-.technologies-card .tech-icons {
+.contato {
+    color: var(--cor-fundo);
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-top: 80px;
+    margin-bottom: 30px;
+}
+
+.form {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    gap: 35px;  
+    gap: 25px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background: var(--cor-gradiente-card-escuro);
+    border-radius: 8px;
+    padding: 40px 60px 40px 60px;
+    box-shadow: 0 2px 4px rgb(0, 0, 0, 0.2);
+    width: 600px;
 }
 
-.technologies-card .tech-icons img {
-    width: 60px; /* Tamanho dos ícones de tecnologia */
-    height: 60px;
-    transition: transform 0.2s ease;
+.form input,
+.form textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1.1rem;
 }
 
-.technologies-card .tech-icons img:hover {
-    transform: scale(1.15); /* Efeito de zoom nos ícones */
+.form button {
+    background: var(--cor-gradiente-card-escuro);
+    color: var(--cor-texto-claro);
+    padding: 15px 30px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
 }
 
+.form button:hover {
+    background-color: var(--cor-principal);
+}
+
+#contato {
+    color: var(--cor-fundo);
+}
+
+.social-icons {
+    display: flex;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.social-icons a {
+    color: var(--cor-texto-claro);
+    font-size: 2.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #e0a3b8;
+}

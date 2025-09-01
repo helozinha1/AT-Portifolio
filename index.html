@@ -8,103 +8,78 @@
     <link rel="stylesheet" href="./assents/css/style.css">
 </head>
 <body>
-    
-    <!-- Cabecalho do Portifolio-->
     <header class="cabecalho">
-       <img src="./assents/img/eu.jpg" alt="Foto de perfil de Helloysa da Rocha" class="foto">
-       
-        <section class="link-cabecalho">
-        <nav>
+        <div class="perfil-cabecalho">
+            <img src="./assents/img/eu.jpg" alt="Foto de perfil de Helloysa da Rocha" class="foto">
+            <span class="nome">Helloysa da Rocha</span>
+        </div>
+        <nav class="link-cabecalho">
             <ul>
-            <a href="#contato">Contato</a>
-            <a href="#Sobre mim">Sobre mim</a>
-            <a href="#Habilidades">Habilidade</a>
+                <li><a href="#contato">Contato</a></li>
+                <li><a href="#Sobre mim">Sobre mim</a></li>
+                <li><a href="#Habilidades">Habilidade</a></li>
             </ul>
         </nav>
-        </section>
-
     </header>
-
-<main>
-    
-
-<section id="about-me">
-        <div class="gradient-background"></div>
-        <div class="about-content">
-            <div class="card-container">
-                <div class="card1">
-                    <h3>Quem Sou Eu</h3>
-                    <p>Sou uma desenvolvedora apaixonada por criar soluções inovadoras e eficientes. Com foco no aprendizado contínuo, busco sempre aprimorar minhas habilidades e entregar projetos de alta qualidade.</p>
+    <main>
+        <section id="about-me">
+            <div class="gradient-background"></div>
+            <div class="about-content">
+                <div class="card-container">
+                    <div class="card1">
+                        <h3>Quem Sou Eu</h3>
+                        <p>Sou uma desenvolvedora apaixonada por criar soluções inovadoras e eficientes. Com foco no aprendizado contínuo, busco sempre aprimorar minhas habilidades e entregar projetos de alta qualidade.</p>
+                    </div>
+                    <div class="card1">
+                        <h3>Meu Objetivo</h3>
+                        <p>Meu objetivo é contribuir para equipes dinâmicas, desenvolvendo aplicações full-stack que gerem impacto positivo e proporcionem uma excelente experiência ao usuário. Almejo desafios que impulsionem meu crescimento profissional.</p>
+                    </div>
+                    <div class="card1">
+                        <h3>Meu Perfil</h3>
+                        <p>Sou proativa, curiosa e tenho forte senso de responsabilidade. Gosto de trabalhar em equipe, colaborar e aprender com diferentes perspectivas, sempre buscando a melhor solução para os problemas.</p>
+                    </div>
                 </div>
-                <div class="card1">
-                    <h3>Meu Objetivo</h3>
-                    <p>Meu objetivo é contribuir para equipes dinâmicas, desenvolvendo aplicações full-stack que gerem impacto positivo e proporcionem uma excelente experiência ao usuário. Almejo desafios que impulsionem meu crescimento profissional.</p>
-                </div>
-                <div class="card1">
-                    <h3>Meu Perfil</h3>
-                    <p>Sou proativa, curiosa e tenho forte senso de responsabilidade. Gosto de trabalhar em equipe, colaborar e aprender com diferentes perspectivas, sempre buscando a melhor solução para os problemas.</p>
-                </div>
+            
             </div>
-            <div class="technologies-card">
-                <h3>Minhas Tecnologias</h3>
-                <div class="tech-icons">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="Express.js">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub">
-                </div>
-            </div>
-        </div>
-</section>
-
-
-   
-
-    
-<h2 class="Habilidades">Habilidades</h2>
-    <div class="container">
-
-
-        <div class="card">
-             <i class="fa-brands fa-html5"></i>
-             <h2>HTML5</h2>
-             <p>Estruturação semântica para web, garantindo acessibilidade e otimização para seo.</p>
-        </div>
-        <div class="card">
-             <i class="fa-brands fa-css3-alt"></i>
-             <h2>CSS3</h2>
-             <p>Estilização avançada com layouts responsivos, animações e design moderno.</p>
-        </div>
-        <div class="card">
-             <i class="fa-brands fa-square-js"></i>
-             <h2>JavaScript</h2>
-             <p>Dinamismo e interatividade para criar experiências de usuarios ricas e funcionais.</p>
-        </div>
-        <div class="card">
-             <i class="fa-brands fa-react"></i>
-             <h2>React</h2>
-             <p>Criação de interfaces reativas e componetização para SPAs eficientes e escaláveis.</p>
-        </div>
-        <div class="card">
-             <i class="fa-brands fa-node"></i>
-             <h2>Node.js</h2>
-             <p>Backend em JavaScript para construir APIs RestFull rapidas e escalaveis.</p>
-        </div>
-        <div class="card">
-             <i class="fa-solid fa-database"></i>
-             <h2>Postgree</h2>
-             <p>Banco de dados relacional robusto, focado em integridade e escalabilidade.</p>
-        </div>
+        </section>
+        <h2 class="Habilidades">Habilidades</h2>
+<div class="container-habilidades">
+    <div class="card-habilidade">
+        <i class="fa-brands fa-html5"></i>
+        <h2>HTML5</h2>
+        <p>Estruturação semântica para web, garantindo acessibilidade e otimização para seo.</p>
     </div>
+    <div class="card-habilidade">
+        <i class="fa-brands fa-css3-alt"></i>
+        <h2>CSS3</h2>
+        <p>Estilização avançada com layouts responsivos, animações e design moderno.</p>
+    </div>
+    <div class="card-habilidade">
+        <i class="fa-brands fa-square-js"></i>
+        <h2>JavaScript</h2>
+        <p>Dinamismo e interatividade para criar experiências de usuarios ricas e funcionais.</p>
+    </div>
+    <div class="card-habilidade">
+        <i class="fa-brands fa-react"></i>
+        <h2>React</h2>
+        <p>Criação de interfaces reativas e componetização para SPAs eficientes e escaláveis.</p>
+    </div>
+    <div class="card-habilidade">
+        <i class="fa-brands fa-node"></i>
+        <h2>Node.js</h2>
+        <p>Backend em JavaScript para construir APIs RestFull rapidas e escalaveis.</p>
+    </div>
+    <div class="card-habilidade">
+        <i class="fa-solid fa-database"></i>
+        <h2>Postgree</h2>
+        <p>Banco de dados relacional robusto, focado em integridade e escalabilidade.</p>
+    </div>
+</div>
 
-   <section class="secao-projetos">
-        <h2 class="titulo-projetos">Meus Projetos</h2>
-        <a href="https://github.com/helozinha1" class="botao-link">Veja Meus Projetos no GitHub</a>
-    </section>
+<section class="secao-projetos">
+    <h2 class="titulo-projetos">Meus Projetos</h2>
+    <a href="https://github.com/helozinha1" class="botao-link">Veja Meus Projetos no GitHub</a>
+</section>
 
 <div class="mensagem">
     <form action="" class="form">
@@ -113,25 +88,17 @@
         <input type="email" placeholder="Email" required>
         <textarea placeholder="Mensagem" required></textarea>
         <button type="submit">Enviar</button>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/helloysa-rocha-16ba3b2a7/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/helozinha1" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.instagram.com/ahhello_/" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
     </form>
-    
 </div>
 
-
-
-
-
-
-
-
-
-
-   
-</main>
-        
-    
-</body>
-   <footer id="rodape">
-    <p class="rodape">&copy; 2025 Desenvolvido por Helloysa</p>
+    </main>
+    <footer id="rodape">
+        <p class="rodape">&copy; 2025 Desenvolvido por Helloysa</p>
     </footer>
+</body>
 </html>
